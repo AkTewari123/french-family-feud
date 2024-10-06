@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Research Project Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+        integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    </div>
+    <div id="header">
+        <h1 class="feudHeaders" style="color: black; font-size: 3em; background-color: white; display:inline-block; ">
+            Stereotypical French Items
+        </h1>
+    </div>
+    <div class="feudGame">
+        <div class="feudContainers">
+            <div class="feudGrids">
+                <div class="gridItems" id="questionOne">
+                    <h1 id="numberOne">
+                        1
+                    </h1>
+                    <h1 id="answerOne">
+                        Beret, Baguette (9)
+
+                    </h1>
+                </div>
+                <div class="gridItems" id="questionTwo">
+                    <h1 id="numberTwo">
+                        2
+                    </h1>
+                    <h1 id="answerTwo">
+                        Cigarette, Wine (3)
+
+                    </h1>
+                </div>
+                <div class="gridItems" id="questionThree">
+                    <h1 id="numberThree">
+                        3
+                    </h1>
+                    <h1 id="answerThree">
+                        Cheese, Red scarf (2)
+                    </h1>
+                </div>
+                <div class="gridItems" id="questionFour">
+                    <h1 id="numberFour">
+                        4
+                    </h1>
+                    <h1 id="answerFour">
+                        French Perfume (1)
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById("answerOne").style.display = "none";
+
+    document.getElementById("questionOne").addEventListener("click", async () => {
+        document.getElementById("questionOne").style.transition = "transform 3s";
+        document.getElementById("questionOne").style.transform = "rotateX(360deg)";
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        document.getElementById("numberOne").style.display = "none";
+        document.getElementById("answerOne").style.display = "block";
+        // document.getElementById("questionOne")
+    })
+    document.getElementById("answerTwo").style.display = "none";
+
+    document.getElementById("questionTwo").addEventListener("click", async () => {
+        document.getElementById("questionTwo").style.transition = "transform 3s";
+        document.getElementById("questionTwo").style.transform = "rotateX(360deg)";
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        document.getElementById("numberTwo").style.display = "none";
+        document.getElementById("answerTwo").style.display = "block";
+    })
+    document.getElementById("answerThree").style.display = "none";
+
+    document.getElementById("questionThree").addEventListener("click", async () => {
+        document.getElementById("questionThree").style.transition = "transform 3s";
+        document.getElementById("questionThree").style.transform = "rotateX(360deg)";
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        document.getElementById("numberThree").style.display = "none";
+        document.getElementById("answerThree").style.display = "block";
+    })
+    document.getElementById("answerFour").style.display = "none";
+
+    document.getElementById("questionFour").addEventListener("click", async () => {
+        document.getElementById("questionFour").style.transition = "transform 3s";
+        document.getElementById("questionFour").style.transform = "rotateX(360deg)";
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        document.getElementById("numberFour").style.display = "none";
+        document.getElementById("answerFour").style.display = "block";
+    })
+    document.getElementById("answerFive").style.display = "none";
+
+    document.getElementById("questionFive").addEventListener("click", async () => {
+        document.getElementById("questionFive").style.transition = "transform 3s";
+        document.getElementById("questionFive").style.transform = "rotateX(360deg)";
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        document.getElementById("numberFive").style.display = "none";
+        document.getElementById("answerFive").style.display = "block";
+    })
+    document.getElementById("answerSix").style.display = "none";
+
+    document.getElementById("questionSix").addEventListener("click", async () => {
+        document.getElementById("questionSix").style.transition = "transform 3s";
+        document.getElementById("questionSix").style.transform = "rotateX(360deg)";
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        document.getElementById("numberSix").style.display = "none";
+        document.getElementById("answerSix").style.display = "block";
+    })
+</script>
+
+</html>
