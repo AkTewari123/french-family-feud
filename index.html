@@ -71,14 +71,6 @@
                         Faux pas, À la carte, RSVP, Rendezvous, Ballet (1)
                     </h1>
                 </div>
-                <div class="gridItems" id="questionSix">
-                    <h1 id="numberSix">
-                        6
-                    </h1>
-                    <h1 id="answerSix">
-                        Bon Apétit (8)
-                    </h1>
-                </div>
             </div>
         </div>
     </div>
@@ -129,15 +121,6 @@ document.getElementById("questionFive").addEventListener("click", async() => {
     await new Promise(resolve => setTimeout(resolve, 2000));
     document.getElementById("numberFive").style.display = "none";
     document.getElementById("answerFive").style.display = "block";
-})
-document.getElementById("answerSix").style.display = "none";
-
-document.getElementById("questionSix").addEventListener("click", async() => {
-    document.getElementById("questionSix").style.transition = "transform 3s";
-    document.getElementById("questionSix").style.transform = "rotateX(360deg)";
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    document.getElementById("numberSix").style.display = "none";
-    document.getElementById("answerSix").style.display = "block";
 })
 </script>
 

@@ -105,24 +105,6 @@
         document.getElementById("numberFour").style.display = "none";
         document.getElementById("answerFour").style.display = "block";
     })
-    document.getElementById("answerFive").style.display = "none";
-
-    document.getElementById("questionFive").addEventListener("click", async () => {
-        document.getElementById("questionFive").style.transition = "transform 3s";
-        document.getElementById("questionFive").style.transform = "rotateX(360deg)";
-        await new Promise(resolve => setTimeout(resolve, 2000));
-        document.getElementById("numberFive").style.display = "none";
-        document.getElementById("answerFive").style.display = "block";
-    })
-    document.getElementById("answerSix").style.display = "none";
-
-    document.getElementById("questionSix").addEventListener("click", async () => {
-        document.getElementById("questionSix").style.transition = "transform 3s";
-        document.getElementById("questionSix").style.transform = "rotateX(360deg)";
-        await new Promise(resolve => setTimeout(resolve, 2000));
-        document.getElementById("numberSix").style.display = "none";
-        document.getElementById("answerSix").style.display = "block";
-    })
 </script>
 
 </html>
